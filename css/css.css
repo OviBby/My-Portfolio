@@ -108,6 +108,13 @@ h2 {
     color: #cbd5f5;
 }
 
+.about img {
+    float: right;
+    width: 250px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
 /* SKILLS & PROJECTS */
 .skills, .projects {
     display: grid;
