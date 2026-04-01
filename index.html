@@ -508,26 +508,88 @@
 
             <div class="skw-grid">
 
-                <div class="gal-wrap">
-                    <canvas class="gal-stars" id="starCanvas"></canvas>
-                    <div class="corner-tl"></div>
+                <div class="gc-scene">
 
-                    <div class="gal-card" id="courseCard">
-                        <span class="gal-icon" id="cIcon"></span>
-                        <div class="gal-label" id="cLabel"></div>
-                        <div class="gal-title" id="cTitle"></div>
-                        <div class="gal-desc" id="cDesc"></div>
-                        <div class="gal-footer">
-                            <button class="gal-btn" id="cBtn"></button>
-                            <span class="gal-counter" id="cCounter"></span>
+                    <!-- stars -->
+                    <div class="star" style="width:2px;height:2px;top:8%;left:82%"></div>
+                    <div class="star" style="width:1.5px;height:1.5px;top:25%;left:94%"></div>
+                    <div class="star" style="width:2px;height:2px;top:65%;left:90%"></div>
+                    <div class="star" style="width:1.5px;height:1.5px;top:80%;left:6%"></div>
+                    <div class="star" style="width:2px;height:2px;top:45%;left:3%"></div>
+                    <div class="star" style="width:1px;height:1px;top:15%;left:15%"></div>
+
+                    <div class="gc-track" id="track">
+
+                        <!-- Card 1 -->
+                        <div class="gc-card active" data-i="0">
+                            <div class="corner-tl"></div>
+                            <div class="corner-br"></div>
+                            <div class="gc-card-inner">
+                                <div class="c-label"><div class="l-dot"></div>Course 01</div>
+                                <div class="c-icon">⚡</div>
+                                <div class="c-title"><span>Galactic</span> Data Engineering</div>
+                                <div class="c-desc">
+                                    Architect petabyte-scale pipelines across distributed star clusters.
+                                    Real-time analytics at the speed of light.
+                                </div>
+                                <div class="c-footer">
+                                    <a href="#" class="c-btn">Ignite ›</a>
+                                    <div class="c-counter"><div class="s-dot"></div>01 / 03</div>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- Card 2 -->
+                        <div class="gc-card" data-i="1">
+                            <div class="corner-tl"></div>
+                            <div class="corner-br"></div>
+                            <div class="gc-card-inner">
+                                <div class="c-label"><div class="l-dot"></div>Course 02</div>
+                                <div class="c-icon">🚀</div>
+                                <div class="c-title"><span>Full-Stack</span> Mastery Program</div>
+                                <div class="c-desc">
+                                    Build production-ready web apps with modern stacks.
+                                    React, Node.js, cloud deployment, and everything in between.
+                                </div>
+                                <div class="c-footer">
+                                    <a href="#" class="c-btn">Ignite ›</a>
+                                    <div class="c-counter"><div class="s-dot"></div>02 / 03</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="gc-card" data-i="2">
+                            <div class="corner-tl"></div>
+                            <div class="corner-br"></div>
+                            <div class="gc-card-inner">
+                                <div class="c-label"><div class="l-dot"></div>Course 03</div>
+                                <div class="c-icon">🛸</div>
+                                <div class="c-title"><span>AI &amp;</span> Neural Networks</div>
+                                <div class="c-desc">
+                                    Train, fine-tune, and deploy intelligent models across cosmic infrastructure.
+                                    From theory to production in warp speed.
+                                </div>
+                                <div class="c-footer">
+                                    <a href="#" class="c-btn">Ignite ›</a>
+                                    <div class="c-counter"><div class="s-dot"></div>03 / 03</div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="gal-nav">
-                        <div class="gal-arrow" id="prevBtn">&#8592;</div>
-                        <div class="gal-dots" id="dotContainer"></div>
-                        <div class="gal-arrow" id="nextBtn">&#8594;</div>
+                    <!-- Navigation -->
+                    <div class="gc-nav">
+                        <button class="nav-btn" id="prev">&#8592;</button>
+                        <div class="gc-dots">
+                            <div class="dot on" data-d="0"></div>
+                            <div class="dot" data-d="1"></div>
+                            <div class="dot" data-d="2"></div>
+                        </div>
+                        <button class="nav-btn" id="next">&#8594;</button>
                     </div>
+
                 </div>
             </div>
             </div>
@@ -805,6 +867,29 @@
 <!-- Motion One loaded dynamically -->
 <script src="js/animations.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+    const cards = document.querySelectorAll('.gc-card');
+    const dots = document.querySelectorAll('.dot');
+    let cur = 0;
+
+    function go(next, dir) {
+        const old = cur;
+        cur = (next + cards.length) % cards.length;
+        cards[old].classList.remove('active');
+        cards[old].classList.add(dir === 1 ? 'exit-left' : 'exit-right');
+        setTimeout(() => cards[old].classList.remove('exit-left', 'exit-right'), 450);
+        cards[cur].classList.add('active');
+        dots.forEach((d, i) => d.classList.toggle('on', i === cur));
+    }
+
+    document.getElementById('next').onclick = () => go(cur + 1, 1);
+    document.getElementById('prev').onclick = () => go(cur - 1, -1);
+    dots.forEach(d => d.onclick = () => {
+        const t = +d.dataset.d;
+        if (t !== cur) go(t, t > cur ? 1 : -1);
+    });
+</script>
 
 
 </body>
