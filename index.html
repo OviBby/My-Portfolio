@@ -508,25 +508,25 @@
 
             <div class="skw-grid">
 
-                <canvas id="speed-lines"></canvas>
-                <div class="nebula"></div>
-                <div class="vignette"></div>
-                <div id="flash"></div>
-                <div id="warp-ring"></div>
+                <div class="gal-wrap">
+                    <canvas class="gal-stars" id="starCanvas"></canvas>
+                    <div class="corner-tl"></div>
 
-                <div id="app">
-
-
-                    <div class="stage" id="stage">
-                        <div class="stage-glow"></div>
-                        <div class="ghost ghost-2" id="ghost2"></div>
-                        <div class="ghost ghost-1" id="ghost1"></div>
+                    <div class="gal-card" id="courseCard">
+                        <span class="gal-icon" id="cIcon"></span>
+                        <div class="gal-label" id="cLabel"></div>
+                        <div class="gal-title" id="cTitle"></div>
+                        <div class="gal-desc" id="cDesc"></div>
+                        <div class="gal-footer">
+                            <button class="gal-btn" id="cBtn"></button>
+                            <span class="gal-counter" id="cCounter"></span>
+                        </div>
                     </div>
 
-                    <div class="controls">
-                        <button class="ctrl-btn" id="prev">&#8592;</button>
-                        <div class="dots" id="dots"></div>
-                        <button class="ctrl-btn" id="next">&#8594;</button>
+                    <div class="gal-nav">
+                        <div class="gal-arrow" id="prevBtn">&#8592;</div>
+                        <div class="gal-dots" id="dotContainer"></div>
+                        <div class="gal-arrow" id="nextBtn">&#8594;</div>
                     </div>
                 </div>
             </div>
