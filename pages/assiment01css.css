@@ -66,6 +66,12 @@ body {
     position: relative;
     text-decoration: none;
 }
+.card:before {
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+}
 
 
 
