@@ -87,6 +87,9 @@ body {
     transform: scale(1) translateZ(0);
     transition: filter 200ms linear, transform 200ms linear;
 }
+.card:hover .card__background {
+    transform: scale(1.05) translateZ(0);
+}
 
 
 
