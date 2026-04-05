@@ -1,24 +1,6 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
-:root {
-    --primary: #a855f7;
-    --accent: #fb923c;
-    --purple: #c084fc;
-    --gradient-1: linear-gradient(135deg, #a855f7 0%, #7c3aed 40%, #fb923c 100%);
-    --bg-dark: #0e0e0e;
-    --border: #334155;
-}
 
-/*body {
-    background: var(--bg-dark);
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    padding: 40px 20px;
-}*/
+
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -81,7 +63,7 @@ figcaption {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(transparent, rgba(10, 14, 39, 0.88));
+
     padding: 20px 16px 14px;
     transform: translateY(100%);
     transition: transform 0.35s ease;
@@ -130,3 +112,4 @@ figure:nth-child(10) {
 @media (max-width: 500px) {
     .gallery { grid-template-columns: 1fr; }
 }
+
