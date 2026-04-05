@@ -5,7 +5,7 @@
     --cyan: #fb923c;
     --purple: #c084fc;
     --green: #86efac;
-    --bg-dark: #0f172a;
+    --bg-dark: #14223e;
     --bg-darker: #020617;
     --bg-card: #1e293b;
     --bg-hover: #334155;
@@ -3468,3 +3468,5 @@ img {
         font-size: 12px;
     }
 }
+
+
