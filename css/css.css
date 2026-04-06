@@ -2917,5 +2917,14 @@ img {
 #gallery .section-title {
     font-family: 'Orbitron', monospace;
 }
+#gallery.gallery-heading {
+    font-family: 'Orbitron', monospace;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    color: var(--text-primary);
+    position: relative;
+}
 
 
