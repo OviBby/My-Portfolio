@@ -7,6 +7,7 @@
     <title> My Portfolio Web Design</title>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <
 
     <script>
         // Suppress Tailwind CDN warning
@@ -30,6 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Fira+Code:wght@300;
     400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body class="body-main" data-theme="dark" data-lang="en" data-dir="ltr">
@@ -149,7 +151,7 @@
                     Currently focused on building responsive web applications and creating well-structured digital solutions.
                 </p>
 
-                <div class="hero-buttons">
+                <div class="hero-buttons" data-aos="fade-down-right">
                     <a href="#contact" class="btn btn-primary">
                         <span data-text-en="Get In Touch" data-text-ar="تواصل معي">Get In Touch</span>
                         <i class="fas fa-arrow-right"></i>
@@ -179,7 +181,7 @@
                 </div>
             </div>
 
-            <div class="hero-image-wrapper">
+            <div class="hero-image-wrapper" data-aos="fade-down-left">
                 <div class="hero-image-container">
                     <div class="profile-image-glow"></div>
                     <div class="profile-image-frame">
@@ -236,7 +238,7 @@
                 <div class="section-line"></div>
             </div>
 
-            <div class="about-content">
+            <div class="about-content" data-aos="fade-up">
                 <div class="about-text-wrapper">
                     <div class="about-intro">
                         <p class="about-text" data-text-en=" I am a creative and detail-oriented individual with a strong
@@ -252,24 +254,24 @@
                         </p>
                     </div>
 
-                    <div class="about-stats">
+                    <div class="about-stats" data-aos="fade-right">
                         <div class="stat-item">
                             <div class="stat-number" data-count="02">02</div>
                             <div class="stat-label" data-text-en="Projects" data-text-ar="مشروع">Projects</div>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-item" data-aos="fade-right">
                             <div class="stat-number" data-count="01">01</div>
                             <div class="stat-label" data-text-en="Years Experience" data-text-ar="سنوات خبرة">Years Experience</div>
                         </div>
-                        <div class="stat-item">
+                        <div class="stat-item" data-aos="fade-right">
                             <div class="stat-number" data-count="30">10</div>
                             <div class="stat-label" data-text-en="Happy Clients" data-text-ar="عميل سعيد">Happy Clients</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="about-image-wrapper">
-                    <div class="about-image-container">
+                <div  class="about-image-wrapper" data-aos="fade-left" >
+                    <div class="about-image-container" >
                         <div class="code-block">
                             <div class="code-line">
                                 <span class="code-keyword">Web</span>
@@ -311,7 +313,7 @@
         </div>
     </section>
     <!-- Skills Section -->
-    <section id="skills" class="section skw-section">
+    <section id="skills" class="section skw-section" >
         <div class="section-container">
             <div class="section-header">
 
@@ -327,7 +329,7 @@
             <div class="skw-grid">
 
                 <!-- Card 1 -->
-                <div class="skw-box">
+                <div class="skw-box" data-aos="fade-right">
                     <span></span>
                     <div class="skw-content">
                         <div class="skw-icon">
@@ -350,7 +352,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="skw-box">
+                <div class="skw-box" data-aos="fade-up">
                     <span></span>
                     <div class="skw-content">
                         <div class="skw-icon">
@@ -379,7 +381,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="skw-box">
+                <div class="skw-box" data-aos="fade-left">
                     <span></span>
                     <div class="skw-content">
                         <div class="skw-icon">
@@ -421,70 +423,65 @@
             <div class="tools-grid">
 
                 <!-- Row 1 -->
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
                     <span>HTML5</span>
                 </div>
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
                     <span>CSS3</span>
                 </div>
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
                     <span>Bootstrap</span>
                 </div>
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
                     <span>JavaScript</span>
                 </div>
 
-
-                <!-- Row 2 -->
-
-
                 <!-- Row 3 -->
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
                     <span>Python</span>
                 </div>
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
                     <span>Java</span>
                 </div>
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
                     <span>MySQL</span>
                 </div>
 
-
                 <!-- Row 4 -->
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
                     <span>PostgreSQL</span>
                 </div>
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
                     <span>Git</span>
                 </div>
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon-dark" />
                     <span>GitHub</span>
                 </div>
 
-                <!-- Row 5 (New) -->
-                <div class="tool-card">
+                <!-- Row 5 -->
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
                     <span>Figma</span>
                 </div>
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netbeans/netbeans-original.svg" alt="NetBeans" />
                     <span>NetBeans</span>
                 </div>
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
                     <span>VS Code</span>
                 </div>
-                <div class="tool-card">
+                <div class="tool-card" data-aos="flip-right">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ IDEA" />
                     <span>IntelliJ IDEA</span>
                 </div>
@@ -515,10 +512,10 @@
                     <div class="star" style="width:2px;height:2px;top:45%;left:3%"></div>
                     <div class="star" style="width:1px;height:1px;top:15%;left:15%"></div>
 
-                    <div class="gc-track" id="track">
+                    <div class="gc-track" id="track" data-aos="flip-up">
 
                         <!-- Card 1 -->
-                        <div class="gc-card active" data-i="0">
+                        <div class="gc-card active" data-i="0" >
                             <div class="corner-tl"></div>
                             <div class="corner-br"></div>
                             <div class="gc-card-inner">
@@ -593,7 +590,7 @@
         </div>
         <div class="projects-grid">
             <!-- Supermarket Project -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up">
                 <div class="project-image">
                     <div class="project-overlay">
                         <div class="project-links">
@@ -627,7 +624,7 @@
             </div>
 
             <!-- Connect Four Game -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up">
                 <div class="project-image">
                     <div class="project-overlay">
                         <div class="project-links">
@@ -657,7 +654,7 @@
             </div>
 
             <!-- Gold Management System -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up">
                 <div class="project-image">
                     <div class="project-overlay">
                         <div class="project-links">
@@ -691,7 +688,7 @@
             </div>
 
             <!-- GYM Management System -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up">
                 <div class="project-image">
                     <div class="project-overlay">
                         <div class="project-links">
@@ -723,7 +720,7 @@
             </div>
 
             <!-- Pharmacy Management System -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up">
                 <div class="project-image">
                     <div class="project-overlay">
                         <div class="project-links">
@@ -755,7 +752,7 @@
             </div>
 
             <!-- market Project -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up">
                 <div class="project-image">
                     <div class="project-overlay">
                         <div class="project-links">
@@ -798,7 +795,7 @@
 </section>
 
    <!-- Gallery SECTION-->
-    <section id="gallery" class="section projects-section">
+    <section id="gallery" class="section projects-section" >
         <div class="section-container">
             <div class="section-header">
                 <h2 class="section-title">
@@ -811,21 +808,21 @@
 
 
             <div class="gallery">
-                <figure>
+                <figure data-aos="flip-down">
                     <img src="gallry/1.jpg" alt="Campus">
                     <figcaption>
                         <h3>Campus </h3>
                         <p>Making memories in between assignments</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure data-aos="flip-down">
                     <img src="gallry/8.JPG" alt="Bach">
                     <figcaption>
                         <h3>Panadura</h3>
                         <p>Most memoriful places</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure data-aos="flip-down">
                     <img src="gallry/7.jpg" alt="School">
                     <figcaption>
                         <h3>School fridens</h3>
@@ -833,7 +830,7 @@
                     </figcaption>
                 </figure>
 
-                <figure>
+                <figure data-aos="flip-down">
                     <img src="gallry/4.jpg" alt="me">
                     <figcaption>
                         <h3>Me</h3>
@@ -841,21 +838,21 @@
                     </figcaption>
                 </figure>
 
-                <figure>
+                <figure data-aos="flip-down">
                     <img src="gallry/15.jpg" alt="First Group Activity">
                     <figcaption>
                         <h3>First Group Activity</h3>
                         <p>First Group Activity memories new friends.</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure data-aos="flip-down">
                     <img src="gallry/11.jpg" alt="Office">
                     <figcaption>
                         <h3>Free time</h3>
                         <p>Not just friends… we’re a whole vibe.</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure data-aos="flip-down">
                     <img src="gallry/5.jpg" alt="ME">
                     <figcaption>
                         <h3>Campus life</h3>
@@ -863,7 +860,7 @@
                     </figcaption>
                 </figure>
 
-                <figure>
+                <figure data-aos="flip-down">
                     <img src="gallry/17.jpg" alt="CoCoBeach">
                     <figcaption>
                         <h3>CoCoBeach</h3>
@@ -871,14 +868,14 @@
                     </figcaption>
                 </figure>
 
-                <figure>
+                <figure  data-aos="flip-down">
                     <img src="gallry/18.jpg" alt="Flower">
                     <figcaption>
                         <h3>Flower</h3>
                         <p>Sri Lanka national flower.</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure data-aos="flip-down">
                     <img src="gallry/10.jpg" alt="Mountains">
                     <figcaption>
                         <h3>Mountains</h3>
@@ -886,21 +883,21 @@
                     </figcaption>
                 </figure>
 
-                <figure>
+                <figure data-aos="flip-down">
                     <img src="gallry/12.jpg" alt="At Night">
                     <figcaption>
                         <h3>At Night </h3>
                         <p>Crzy night with Family.</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure data-aos="flip-down">
                     <img src="gallry/13.jpg" alt="Mountains">
                     <figcaption>
                         <h3>Mero </h3>
                         <p>Mero photo.</p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure data-aos="flip-down">
                     <img src="gallry/14.jpg" alt="Frist sem">
                     <figcaption>
                         <h3>Frist sem</h3>
@@ -932,17 +929,17 @@
 
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <div class="contact-item" data-aos="zoom-in-right">
                         <div class="contact-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="contact-details">
+                        <div class="contact-details" >
                             <h4 class="contact-label" data-text-en="Email" data-text-ar="البريد الإلكتروني">Email</h4>
                             <a href="mailto:ovindijayawardena@gmail.com" class="contact-value">ovindijayawardena@gmail.com</a>
                         </div>
                     </div>
 
-                    <div class="contact-item">
+                    <div class="contact-item" data-aos="zoom-in-right">
                         <div class="contact-icon">
                             <i class="fas fa-phone"></i>
                         </div>
@@ -952,7 +949,7 @@
                         </div>
                     </div>
 
-                    <div class="contact-item">
+                    <div class="contact-item" data-aos="zoom-in-right">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
@@ -963,26 +960,29 @@
                     </div>
                 </div>
 
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Name" data-placeholder-en="Name" data-placeholder-ar="الاسم" required>
+                <form class="contact-form" id="contactForm" >
+                    <div class="form-group"  data-aos="zoom-in-left">
+                        <input type="text" name="from_name" class="form-input" placeholder="Name" data-placeholder-en="Name" data-placeholder-ar="الاسم" required>
                     </div>
-                    <div class="form-group">
-                        <input type="email" class="form-input" placeholder="Email" data-placeholder-en="Email" data-placeholder-ar="البريد الإلكتروني" required>
+                    <div class="form-group" data-aos="zoom-in-left">
+                        <input type="email" name="from_email" class="form-input" placeholder="Email" data-placeholder-en="Email" data-placeholder-ar="البريد الإلكتروني" required>
                     </div>
-                    <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Subject" data-placeholder-en="Subject" data-placeholder-ar="الموضوع" required>
+                    <div class="form-group" data-aos="zoom-in-left">
+                        <input type="text" name="subject" class="form-input" placeholder="Subject" data-placeholder-en="Subject" data-placeholder-ar="الموضوع" required>
                     </div>
-                    <div class="form-group">
-                        <textarea class="form-input form-textarea" rows="5" placeholder="Message" data-placeholder-en="Message" data-placeholder-ar="الرسالة" required></textarea>
+                    <div class="form-group" data-aos="zoom-in-left">
+                        <textarea name="message" class="form-input form-textarea" rows="5" placeholder="Message" data-placeholder-en="Message" data-placeholder-ar="الرسالة" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary btn-submit">
                         <span data-text-en="Send Message" data-text-ar="إرسال الرسالة">Send Message</span>
                         <i class="fas fa-paper-plane"></i>
                     </button>
                 </form>
+
             </div>
         </div>
+
+
     </section>
 </main>
 
@@ -1063,21 +1063,10 @@
     </div>
 </footer>
 
-<!--&lt;!&ndash;typed js&ndash;&gt;-->
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-    AOS.init();
-</script>
-<!--&lt;!&ndash;main js&ndash;&gt;-->
-<script src="js/javaScript.js"></script>
 
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-<!-- Motion One loaded dynamically -->
-<script src="js/animations.js"></script>
-<script src="js/main.js"></script>
+
+
+
 
 <script>
     const cards = document.querySelectorAll('.gc-card');
@@ -1101,20 +1090,53 @@
         if (t !== cur) go(t, t > cur ? 1 : -1);
     });
 </script>
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     AOS.init();
 </script>
 
-<script src="js/javaScript.js"></script>
+<script>
+    emailjs.init("J66yuE0_jIWzxRnid");
 
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-<!-- Motion One loaded dynamically -->
-<script src="js/animations.js"></script>
-<script src="js/main.js"></script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const btn = this.querySelector(".btn-submit");
+        const span = btn.querySelector("span");
+
+        btn.disabled = true;
+        span.textContent = "Sending...";
+
+        const templateParams = {
+            from_name: this.querySelector('[name="from_name"]').value,
+            from_email: this.querySelector('[name="from_email"]').value,
+            subject: this.querySelector('[name="subject"]').value,
+            message: this.querySelector('[name="message"]').value,
+            to_email: "ovindijayawardena@gmail.com"
+        };
+
+        emailjs.send("service_zbr2gqr", "template_wablaw2", templateParams)
+            .then(() => {
+                span.textContent = "Sent! ✓";
+                btn.style.background = "#22c55e";
+                this.reset();
+
+                setTimeout(() => {
+                    btn.disabled = false;
+                    span.textContent = "Send Message";
+                    btn.style.background = "";
+                }, 3000);
+            })
+            .catch((err) => {
+                console.error("EmailJS Error:", err);
+                span.textContent = "Failed. Try again.";
+                btn.disabled = false;
+            });
+    });
+</script>
+<script src="js/javaScript.js"></script>
 
 </body>
 </html>
